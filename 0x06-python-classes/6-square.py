@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Square class to represent a square"""
+"""Square class"""
 
 
 class Square():
-    """square class with it's size and proper validation"""
+    """defines a square"""
 
     def __init__(self, size=0, position=(0, 0)):
         """"Initialize data"""
@@ -45,11 +45,11 @@ class Square():
             self.__position = value
 
     def area(self):
-        """"get area of the square"""
+        """"get square area"""
         return self.size ** 2
 
     def my_print(self):
-        """print the square"""
+        """print the square area"""
         if self.size == 0:
             print()
         else:
