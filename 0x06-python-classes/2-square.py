@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Square class"""
+"""Working with OOP in python"""
 
 
 class Square():
-    """Implementing square class"""
+    """Implementing the square class"""
     def __init__(self, size=0):
-        """ initialize class
+        """ initialize the class
         Args:
-           size: size square
+           size (int): size of the square
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
