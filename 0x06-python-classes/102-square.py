@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" class Square that defines a square"""
+""" square class"""
 
 
 class Square:
-    """ class Square that defines a square"""
+    """ defines a square class"""
     def __init__(self, size=0):
         """ init square
 
         Args:
-            value (int): size of the square.
+            value: size of the square.
         """
         self.size = size
 
@@ -26,20 +26,20 @@ class Square:
         """Sets value into size, must be int.
 
         Args:
-            value (int): size of the square.
+            value: size of the square.
         """
         if type(value) is not int and type(value) is not float:
             raise TypeError('size must be a number')
         elif value < 0:
             raise ValueError('size must be >= 0')
         else:
-            self.__size = value  #: size of the square
+            self.__size = value 
 
     def area(self):
         """returns the area
 
         Returns:
-            area.
+            The area.
         """
         return self.__size**2
 
