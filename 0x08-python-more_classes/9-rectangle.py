@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Defining my rectangle class"""
+"""rectangle class"""
 
 
 class Rectangle:
-    """Rectangle class with setters and getters"""
+    """Representing the rectangle clas"""
 
     number_of_instances = 0
     print_symbol = "#"
@@ -11,8 +11,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
         Args:
-            width: The width of the new rectangle.
-            height: The height of the new rectangle.
+            width: width of the new rectangle.
+            heigt: height of the new rectangle.
         """
         self.width = width
         self.height = height
@@ -42,7 +42,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        
+        """Height Setter
+        Args:
+            value: new value of the height
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -68,7 +71,10 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-    
+        """Rectangle with width and height equal to size.
+        Args:
+            size: width and height of the new rectangle
+        """
         return (cls(size, size))
 
     def area(self):
@@ -83,7 +89,7 @@ class Rectangle:
 
     def __str__(self):
         """String representation of object
-        of the Rectangle class using the 'print_symbol'
+        of the Rectangle class
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
