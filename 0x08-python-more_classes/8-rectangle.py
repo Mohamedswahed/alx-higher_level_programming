@@ -42,7 +42,10 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-    
+        """Height Setter
+        Args:
+            value(int) -> The new value of the height
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
@@ -53,8 +56,8 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         """Rectangle with the greater area.
         Args:
-            rect_1 (Rectangle): Rectangle 1.
-            rect_2 (Rectangle): Rectangle 2.
+            rect_1 (Rectangle) -> Rectangle 1.
+            rect_2 (Rectangle) -> Rectangle 2.
         Raises:
             TypeError: if any argument is not an object of the Rectangle class
         """
