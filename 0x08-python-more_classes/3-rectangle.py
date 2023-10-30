@@ -57,15 +57,10 @@ class Rectangle:
             return 0
         return (self.__height + self.__width) * 2
 
-    def __str__(self):
-        """Return the string of object
-        of the Rectangle class
+  def __str__(self):
+        """ return the rectangle with the character #
         """
-        if self.__height == 0 or self.__width == 0:
-            return ("")
-        rectangles = []
-        for i in range(self.__height):
-            [rectangle.append('#') for j in range(self.__width)]
-            if i != self.__height - 1:
-                rectangles.append("\n")
-        return ("".join(rectangles))
+        if self.__width is 0 or self.__height is 0:
+            return ""
+        return ("\n".join(["".join(["#" for i in range(self.__width)])
+                for j in range(self.__height)]))
